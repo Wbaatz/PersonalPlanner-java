@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Main_Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <GridPane fx:id="myGrid" layoutX="75.0" layoutY="98.0" prefHeight="217.0" prefWidth="426.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label fx:id="theDate" alignment="CENTER" contentDisplay="CENTER" layoutX="194.0" layoutY="55.0" prefHeight="27.0" prefWidth="188.0" text="Label" textAlignment="CENTER" />
+      <Button fx:id="nextbtn" layoutX="489.0" layoutY="56.0" mnemonicParsing="false" onAction="#mybtn" text="next" />
+      <Button fx:id="prevbtn" layoutX="40.0" layoutY="56.0" mnemonicParsing="false" onAction="#mybtn" text="prev" />
+      <Label fx:id="movDate" alignment="CENTER" contentDisplay="CENTER" layoutX="194.0" layoutY="14.0" prefHeight="27.0" prefWidth="188.0" text="Label" textAlignment="CENTER" textFill="#18c392">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="Add_Task" layoutX="421.0" layoutY="401.0" mnemonicParsing="false" onAction="#TheTasks" text="Create Task" textFill="#051c2f">
+         <font>
+            <Font name="Ebrima" size="12.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="Dialogue_Task" layoutX="110.0" layoutY="82.0" prefHeight="227.0" prefWidth="399.0" style="-fx-background-color: grey;" visible="false">
+         <children>
+            <Button fx:id="create_T" layoutX="59.0" layoutY="189.0" mnemonicParsing="false" onAction="#TheTasks" prefHeight="25.0" prefWidth="78.0" text="Enter" visible="false" />
+            <Button fx:id="cancel_T" layoutX="235.0" layoutY="189.0" mnemonicParsing="false" onAction="#TheTasks" prefHeight="25.0" prefWidth="78.0" text="Cancel" visible="false" />
+            <TextArea fx:id="Txt_Task_Area" layoutX="25.0" layoutY="14.0" prefHeight="156.0" prefWidth="348.0" promptText="Enter your task here" visible="false" />
+         </children></AnchorPane>
+      <Button fx:id="Del_Task1" layoutX="319.0" layoutY="401.0" mnemonicParsing="false" onAction="#TheTasks" text="Delete Task" textFill="#051c2f">
+         <font>
+            <Font name="Ebrima" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="Close_btn" layoutX="516.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogOUT" text="Close" />
+      <TextArea fx:id="show_Task" disable="true" layoutX="14.0" layoutY="435.0" prefHeight="54.0" prefWidth="289.0" wrapText="true" />
+      <TextArea fx:id="Scheduled_Task" disable="true" layoutX="17.0" layoutY="356.0" prefHeight="70.0" prefWidth="283.0" />
+      
+      
+   </children>
+   
+  
+</AnchorPane>
